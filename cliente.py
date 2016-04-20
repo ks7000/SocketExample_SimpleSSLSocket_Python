@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 import socket
 import ssl
@@ -17,9 +18,9 @@ Retorna un objecto del tipo SSLSocket.
 """
 conn = context.wrap_socket(sock)
 
-conn.connect(("192.168.1.183", 443))
+conn.connect(("192.168.1.47", 443))
 
 print conn.recv(256)
-conn.send("Hi Server!")
+conn.send("¡Hola, Servidor!")
 
 conn.close()
